@@ -533,6 +533,7 @@ defineObject{
 			fitContainer = false,
 			gameEffect = "Stores items and increases carry capacity when worn.",
 			description = "A simple drawstring backpack.",
+			traits = { "cloak" },
 		},
 		{
 			class = "EquipmentItem",
