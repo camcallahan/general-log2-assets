@@ -4,7 +4,7 @@
 import "assets/scripts/standard_assets.lua"
 
 -- import custom assets
---import "mod_assets/scripts/items.lua"
+import "mod_assets/scripts/items.lua"
 import "mod_assets/scripts/monsters.lua"
 import "mod_assets/scripts/objects.lua"
 import "mod_assets/scripts/tiles.lua"
