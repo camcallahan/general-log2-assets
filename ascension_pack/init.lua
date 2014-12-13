@@ -16,7 +16,18 @@ import "mod_assets/scripts/sounds.lua"
 -- Cameron Callahan's Ascended Items Pack
 import "mod_assets/scripts/ascension_items.lua"
 
+--[[
+Ascension Items Pack
+by Cameron Callahan @camcallahan
 
+Party Object definition that scans items in the inventory
+for a specifically named Script class depending on the 
+trigger hook and runs the performAction function contained
+inside the items in the inventory. This lets you have fairly
+self-contained items that can do things easily based off
+of hooks that Items don't have built in without having a 
+giant, messy set of 'if item' checks in the party.
+--]]
 
 defineObject{
    name = "party",
