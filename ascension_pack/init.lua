@@ -35,12 +35,6 @@ defineObject{
    components = {
       {
          class = "Party",  
-         onPickUpItem =
-            function(party, item)         
-				if not string.find(item.go.name, "socket_") then
-					item.go.item:setFitContainer(false)
-				end
-			end,
 		onCast = function(self, champion, spell)
 		-- Auto Check For Item Specific Triggers below	
 			for i = 1, 10 do
