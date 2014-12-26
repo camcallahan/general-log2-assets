@@ -8,6 +8,9 @@ depending on the type of item they are inserted into. The init.lua has an onPick
 add the required component to allow them to be modified. This can easily be changed to only alter items
 some percentage of the time instead of always.
 
+socketSystem.lua needs to be a script entity in your dungeon.
+socketItems.lua needs to be imported into your dungeons via init.lua.
+
 Current gems available:
 
 A base set of gems that increase stats/provide resistances. Elemental-themed, with qualities of gems that
