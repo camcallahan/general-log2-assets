@@ -54,3 +54,6 @@ standard asset models available. I just need to sit down and learn how to modify
 Included in the root of the textures folder is some item Atlases made available on the Grimrock forums, to
 differentiate the 2d gems a little bit.
 Akroma's icons: http://www.grimrock.net/forum/viewtopic.php?f=22&t=8058
+
+NOTE: The gems currently have another Counter component in them named "treasureclass" that is unrelated to
+the socketSystem. 
