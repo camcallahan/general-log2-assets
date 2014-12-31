@@ -13,7 +13,7 @@ a lot of the gems in here. I have not gone through and converted any of the alco
 LordYig's Grimrock 1 pack can be found on NexusMods: http://www.nexusmods.com/grimrock/mods/177/
 
 The converted gem definitions are included and imported in this if you want to use those as is or 
-modify them into more socket gems.
+modify them into more socket gems. Filtering in the editor for itm_ should bring up all of the gems.
 
 The order of the import lines in init.lua is important.
 The socketBaseItems.lua MUST come first, as it has an item in there that others use as a base_object.

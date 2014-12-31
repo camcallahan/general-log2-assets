@@ -39,30 +39,30 @@ defineObject{ name = "socket_gem_accuracy_1",
 		name = "triggers",
 		source = [[function insertGem(itemToEnchant)
 			if itemToEnchant.go.item:hasTrait("shield") then
-				local modAccuracy = 3
+				local modAccuracy = 2
 				local baseAccuracy = itemToEnchant.go.equipmentitem:getAccuracy()
 				itemToEnchant.go.equipmentitem:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go.item:hasTrait("chest_armor") then
-				local modAccuracy = 3
+				local modAccuracy = 2
 				local baseAccuracy = itemToEnchant.go.equipmentitem:getAccuracy()
 				itemToEnchant.go.equipmentitem:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("meleeattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 3
+				local modAccuracy = 2
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.meleeattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("rangedattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 3
+				local modAccuracy = 2
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.rangedattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("firearmattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 3
+				local modAccuracy = 2
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.firearmattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
@@ -102,30 +102,30 @@ defineObject{ name = "socket_gem_accuracy_2",
 		name = "triggers",
 		source = [[function insertGem(itemToEnchant)
 			if itemToEnchant.go.item:hasTrait("shield") then
-				local modAccuracy = 6
+				local modAccuracy = 4
 				local baseAccuracy = itemToEnchant.go.equipmentitem:getAccuracy()
 				itemToEnchant.go.equipmentitem:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go.item:hasTrait("chest_armor") then
-				local modAccuracy = 6
+				local modAccuracy = 4
 				local baseAccuracy = itemToEnchant.go.equipmentitem:getAccuracy()
 				itemToEnchant.go.equipmentitem:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("meleeattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 6
+				local modAccuracy = 4
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.meleeattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("rangedattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 6
+				local modAccuracy = 4
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.rangedattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("firearmattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 6
+				local modAccuracy = 4
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.firearmattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
@@ -165,30 +165,30 @@ defineObject{ name = "socket_gem_accuracy_3",
 		name = "triggers",
 		source = [[function insertGem(itemToEnchant)
 			if itemToEnchant.go.item:hasTrait("shield") then
-				local modAccuracy = 13
+				local modAccuracy = 6
 				local baseAccuracy = itemToEnchant.go.equipmentitem:getAccuracy()
 				itemToEnchant.go.equipmentitem:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go.item:hasTrait("chest_armor") then
-				local modAccuracy = 13
+				local modAccuracy = 6
 				local baseAccuracy = itemToEnchant.go.equipmentitem:getAccuracy()
 				itemToEnchant.go.equipmentitem:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("meleeattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 13
+				local modAccuracy = 6
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.meleeattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("rangedattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 13
+				local modAccuracy = 6
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.rangedattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
 			elseif itemToEnchant.go:getComponent("firearmattack") then
 				local baseAccuracy = itemToEnchant.go.meleeattack:getAttackPower()
-				local modAccuracy = 13
+				local modAccuracy = 6
 				if baseAccuracy == nil then baseAttackPower = 0 end
 				itemToEnchant.go.firearmattack:setAccuracy( baseAccuracy + modAccuracy )
 				return true, "Increased accuracy."
@@ -228,12 +228,12 @@ defineObject{ name = "socket_gem_evasion_1",
 		name = "triggers",
 		source = [[function insertGem(itemToEnchant)
 			if itemToEnchant.go.item:hasTrait("shield") then
-				local modEvasion = 3
+				local modEvasion = 2
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
 			elseif itemToEnchant.go.item:hasTrait("chest_armor") then
-				local modEvasion = 3
+				local modEvasion = 2
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
@@ -241,7 +241,7 @@ defineObject{ name = "socket_gem_evasion_1",
 				if not itemToEnchant.go:getComponent("equipmentitem") then itemToEnchant.go:createComponent("EquipmentItem") end
 				itemToEnchant.go.equipmentitem:setSlot(ItemSlot.Weapon)
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
-				local modEvasion = 3
+				local modEvasion = 2
 				if baseEvasion == nil then baseEvasion = 0 end
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
@@ -276,12 +276,12 @@ defineObject{ name = "socket_gem_evasion_2",
 		name = "triggers",
 		source = [[function insertGem(itemToEnchant)
 			if itemToEnchant.go.item:hasTrait("shield") then
-				local modEvasion = 6
+				local modEvasion = 4
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
 			elseif itemToEnchant.go.item:hasTrait("chest_armor") then
-				local modEvasion = 6
+				local modEvasion = 4
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
@@ -289,7 +289,7 @@ defineObject{ name = "socket_gem_evasion_2",
 				if not itemToEnchant.go:getComponent("equipmentitem") then itemToEnchant.go:createComponent("EquipmentItem") end
 				itemToEnchant.go.equipmentitem:setSlot(ItemSlot.Weapon)
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
-				local modEvasion = 6
+				local modEvasion = 4
 				if baseEvasion == nil then baseEvasion = 0 end
 				itemToEnchant.go.equipment:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
@@ -329,12 +329,12 @@ defineObject{ name = "socket_gem_evasion_3",
 		name = "triggers",
 		source = [[function insertGem(itemToEnchant)
 			if itemToEnchant.go.item:hasTrait("shield") then
-				local modEvasion = 1
+				local modEvasion = 6
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
 			elseif itemToEnchant.go.item:hasTrait("chest_armor") then
-				local modEvasion = 13
+				local modEvasion = 6
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
 				itemToEnchant.go.equipmentitem:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
@@ -342,7 +342,7 @@ defineObject{ name = "socket_gem_evasion_3",
 				if not itemToEnchant.go:getComponent("equipmentitem") then itemToEnchant.go:createComponent("EquipmentItem") end
 				itemToEnchant.go.equipmentitem:setSlot(ItemSlot.Weapon)
 				local baseEvasion = itemToEnchant.go.equipmentitem:getEvasion()
-				local modEvasion = 13
+				local modEvasion = 6
 				if baseEvasion == nil then baseEvasion = 0 end
 				itemToEnchant.go.equipment:setEvasion( baseEvasion + modEvasion )
 				return true, "Increased evasion."
@@ -1306,6 +1306,7 @@ defineObject{ name = "socket_gem_reach",
 				itemToEnchant.go.meleeattack:setReachWeapon(true)
 				return true, "Reach ability added."
 			end
+			return false, "No effect."
 		end]]
 		},
 	}
@@ -1344,6 +1345,7 @@ defineObject{ name = "socket_gem_aquatic",
 				itemToEnchant.go.item:addTrait("aquatic")
 				return true, "Aquatic attack ability added."
 			end
+			return false, "No effect."
 		end]]
 		},
 	}
