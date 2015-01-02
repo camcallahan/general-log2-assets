@@ -371,32 +371,35 @@ defineObject{
 			evasion = 10,
 		},
 		{
-			class = "Script",
-			name = "triggerOnMove",
-			source = [[function performAction(dummyself, direction)
-				local foundTrap = false
-				for xx = party.x - 1, party.x + 1 do
-				for yy = party.y - 1, party.y + 1 do
-				for i in party.map:entitiesAt(xx, yy) do
-					if i:getComponent("istrap") then
-					if i.istrap:getValue() > 0 then foundTrap = true end
-					end
-					if i:getComponent("chest") then
-					if i.chest:getMimic() then foundTrap = true end
-					end
-				end
-				end
-			end
-			if foundTrap then 
-				--self.go.item:setGfxIndex(23)
-				self.go.item:setGfxIndex(26)
-			else
-				--self.go.item:setGfxIndex(25)
-				self.go.item:setGfxIndex(74)
-			end
-			end
-			]]
-		},
+         class = "Script",
+         name = "triggerOnMove",
+         source = [[function performAction(dummyself, direction)
+            print("-----")
+            print("Checking entities")
+            for xx = party.x - 2, party.x + 2 do
+               for yy = party.y - 2, party.y + 2 do
+                  for i in party.map:entitiesAt(xx, yy) do
+
+                     if i:getComponent("istrap") then
+                        print("found istrap at", xx, yy)
+                        if i.istrap:getValue() > 0 then 
+                           self.go.item:setGfxIndex(26)
+                           return
+                        end
+                     elseif i:getComponent("chest") then
+                        print("found chest at", xx, yy)
+                        if i.chest:getMimic() then 
+                           print("-- chest is mimic")
+                           self.go.item:setGfxIndex(26)
+                           return
+                        end
+                     end
+                  end
+               end
+            end
+            self.go.item:setGfxIndex(74)
+         end]]
+      },
 	},
 }
 
